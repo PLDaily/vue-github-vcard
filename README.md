@@ -3,7 +3,7 @@
 ### 使用示例
 
 ```git
-git clone https://github.com/PLDaily/vue-slider.git
+git clone https://github.com/PLDaily/vue-github-vcard.git
 ```
 
 ```git
