@@ -1,6 +1,7 @@
 <style type="text/css">
 .github_main {
     padding: 10px;
+    background-color: #F1EFE8;
 }
 .github_head {
     overflow: hidden;   
@@ -56,7 +57,7 @@
 }
 .github_content {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
     line-height: 1.5;
 }
@@ -89,7 +90,7 @@
     </div>
     <div class="github_content">
         <div v-if="data.blog">
-            <span>{{data.blog}}</span>
+            <span><a target="_blank" :href="'http://' + data.blog">{{data.blog}}</a></span>
         </div>
         <div v-if="data.email">
             <span>{{data.email}}</span>
@@ -102,15 +103,15 @@
         </div>
     </div>
     <div class="github_foot">
-        <a :href="'https://github.com/' + data.login + '?tab=followers'" class="followers">
+        <a target="_blank" :href="'https://github.com/' + data.login + '?tab=followers'" class="followers">
             <div>{{data.followers}}</div>
             <div>Followers</div>
         </a>
-        <a :href="'https://github.com/' + data.login + '?tab=repositories'" class="repos">
+        <a target="_blank" :href="'https://github.com/' + data.login + '?tab=repositories'" class="repos">
             <div>{{data.public_repos}}</div>
             <div>Repos</div>
         </a>
-        <a :href="'https://github.com/' + data.login + '?tab=following'" class="following">
+        <a target="_blank" :href="'https://github.com/' + data.login + '?tab=following'" class="following">
             <div>{{data.following}}</div>
             <div>Following</div>
         </a>

@@ -1,7 +1,11 @@
 <style type="text/css">
-*{
-	padding: 0;
-	margin: 0;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+}
+a {
+    text-decoration: none!important;
 }
 </style>
 <template>
@@ -16,7 +20,7 @@ export default {
     data () {
     	var githubinit = {
     		username: "PlDaily",
-    		width: 260,
+    		width: 230,
     		position: "right"
     	};
 		return {
